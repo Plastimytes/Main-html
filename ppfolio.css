@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: bisque;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(9, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100 ;
+}
+
+.logo{
+    font-size: 30px;
+    color: bisque;
+    text-decoration: solid;
+    font-weight: 500;
+}
+
+.navbar a{
+     font-size: 20px;
+     color: bisque;
+     text-decoration: solid;
+     font-weight: 500;
+     margin-left: 35px;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+
+.home{
+    height: 100vh;
+    background: url("IMG_20240919_083033_936~2.jpg") no-repeat;
+    background-size:500px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+} 
+
+.home-content{
+    background: black;
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-size: 700;
+}
+
+.home-content h2{
+    font-size: 32px;
+    font-size: 700;
+    color: rgb(38, 164, 236);
+}
+
+.home-content p{
+    font-size: 16px;
+    font-size: 700;
+    color: rgb(14, 105, 158);
+    margin: 25px;
+}
+
+.home-content .btn-box{
+    display:  flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    background: rgb(14, 105, 158);
+    border-radius:10px;
+    font-size: 20px;
+    color:#000;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hme.body{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
