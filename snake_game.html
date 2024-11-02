@@ -19,24 +19,24 @@
 	<!-- Create the game area -->
 	<div id="gameArea"></div>
 	<script>
-		// Get the game area element
+		
 		const gameArea = document.getElementById('gameArea');
 		
-		// Set the game area dimensions
+		
 		const width = 400;
 		const height = 400;
 		
-		// Create the snake and food elements
+		
 		const snake = [];
 		const food = [];
 		
-		// Initialize the snake and food positions
+	
 		snake[0] = { x: width / 2, y: height / 2 };
 		food[0] = { x: Math.random() * width, y: Math.random() * height };
 		
-		// Set the snake direction
+		
 		let direction = 'right';
 		
-		// Add event listeners for keyboard input
+		
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'ArrowUp' && direction !
