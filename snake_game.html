@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<style>
+		/* Add some basic styling */
+		body {
+			background-color: #f0f0f0;
+		}
+		#gameArea {
+			width: 400px;
+			height: 400px;
+			border: 1px solid #000;
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<!-- Create the game area -->
+	<div id="gameArea"></div>
+	<script>
+		// Get the game area element
+		const gameArea = document.getElementById('gameArea');
+		
+		// Set the game area dimensions
+		const width = 400;
+		const height = 400;
+		
+		// Create the snake and food elements
+		const snake = [];
+		const food = [];
+		
+		// Initialize the snake and food positions
+		snake[0] = { x: width / 2, y: height / 2 };
+		food[0] = { x: Math.random() * width, y: Math.random() * height };
+		
+		// Set the snake direction
+		let direction = 'right';
+		
+		// Add event listeners for keyboard input
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'ArrowUp' && direction !
