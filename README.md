@@ -6,5 +6,7 @@ The above link is for my very first figma project
 
 Remember to properly use and organize tags in html
 
+
+---------------------------------------
 Object-oriented programming (OOP) is a programming paradigm that uses "objects" to design software. An object is an instance of a class, which can contain both data (attributes or properties) and methods (functions or procedures) that operate on the data. OOP is based on several key concepts:
 
