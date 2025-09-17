@@ -4,7 +4,7 @@ https://www.figma.com/design/5YfJwavO8kSFi5BZRIFyyt/Communication?node-id=0-1&t=
 
 The above link is for my very first figma project
 
-Remember to properly use and organize tags in html
+Remember to properly use and organize tags in html.
 
 
 ---------------------------------------
