@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "No-Shorts YouTube",
+  "version": "1.0",
+  "description": "Filters out YouTube Shorts sections and links on the homepage, search, and subscription pages.",
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  
+  "action": {
+    "default_title": "No-Shorts YouTube",
+    "default_icon": {
+      "16": "icons/download.png",
+      "24": "icons/download (1).png",
+      "32": "icons/images.png"
+    },
+    
+    "default_popup": "popup.html" 
+  },
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ]
+}

@@ -1,0 +1,12 @@
+
+ytd-guide-entry-renderer a[title="Shorts"] {
+    display: none !important;
+}
+
+/*  Hides the "Shorts" shelf/section on the homepage/search results */
+ytd-grid-video-renderer:has(a[href^="/shorts"]) {
+    display: none !important;
+}
+ytd-video-renderer:has(a[href^="/shorts"]) {
+    display: none !important;
+}

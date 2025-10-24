@@ -1,0 +1,106 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+/* General Body and Layout */
+body {
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    width: 250px;
+    padding: 20px;
+    background-color: #1f0808; /* Very dark red/black background */
+    color: #f7b2b2; /* Pale red/pink text for readability */
+    /* Centering and Layout */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Red Theme Styling */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 80, 0.6); /* Vibrant Magenta/Red outer glow */
+    border: 1px solid rgba(255, 0, 80, 0.3); /* Subtle border */
+}
+
+/* Header Text */
+h3 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: #ff3366; /* Bright Red/Pink for title */
+    text-shadow: 0 0 10px rgba(255, 0, 80, 0.9); /* Strong glow effect for title */
+}
+
+/* Toggle Switch Container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin-bottom: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider (the track of the switch) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3b1b1b; /* Darker red-brown for off state */
+    transition: .4s;
+    border-radius: 26px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Slider knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #f7b2b2; /* Pale red/pink knob */
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Subtle knob glow */
+}
+
+/* When the switch is checked (ON state) */
+input:checked + .slider {
+    background-color: #5e5956; /* Vibrant Orange when active */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), 0 0 12px rgba(228, 226, 225, 0.8); /* Stronger Orange/Red outer glow on active track */
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+    background-color: #ff3366; /* Bright Red knob when active */
+    box-shadow: 0 0 10px rgba(255, 0, 80, 0.9); /* Stronger knob glow */
+}
+
+/* Status Text */
+#statusText {
+    font-size: 0.9em;
+    color: #f7b2b2; /* Default light red text */
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Adjusting status text colors for feedback */
+#statusText[data-status="enabled"] {
+    color: #00ff40; /* Keeping a contrasting vibrant green for ENABLED (Hacking/Success) */
+    text-shadow: 0 0 6px rgba(0, 255, 64, 0.8);
+}
+
+#statusText[data-status="disabled"] {
+    color: #ff3366; /* Bright Red for DISABLED (Warning/Off) */
+    text-shadow: 0 0 6px rgba(255, 0, 80, 0.8);
+}
