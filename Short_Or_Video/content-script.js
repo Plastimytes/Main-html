@@ -1,6 +1,7 @@
 
 const SHORTS_URL_PREFIX = '/shorts/'; 
 // YouTube's main video player path
+
 const WATCH_URL_PREFIX = '/watch'; 
 
 // --- Redirection Logic ---
