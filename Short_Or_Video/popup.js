@@ -6,8 +6,7 @@ const statusText = document.getElementById('statusText');
  * Updates the text displayed below the switch in the popup.
  * @param {boolean} isEnabled - The current state of the filter.
  */
-
-
+
 // 1. Load the initial state when the popup opens
 chrome.storage.local.get([TOGGLE_KEY], (result) => {
     // Default to true (enabled) if no value is found in storage
